@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <GameRoot Condition="'$(GameRoot)' == ''">$(MSBuildProjectDirectory)\..</GameRoot>
+    <GameData>$(GameRoot)\data_GamesByMalcs.Melvor2_windows_x86_64</GameData>
+    <ModLoaderPath Condition="'$(ModLoaderPath)' == ''">$(GameRoot)\data_MelvorModLoader_windows_x86_64\MelvorModLoader.dll</ModLoaderPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.4.2" />
+    <Reference Include="GamesByMalcs.Melvor2" HintPath="$(GameData)\GamesByMalcs.Melvor2.dll" Private="false" />
+    <Reference Include="GodotSharp" HintPath="$(GameData)\GodotSharp.dll" Private="false" />
+    <Reference Include="MelvorModLoader" HintPath="$(ModLoaderPath)" Private="false" />
+  </ItemGroup>
+</Project>
