@@ -15,8 +15,6 @@ internal sealed class ActiveActionsWindow(SceneTree tree)
     private Game? displayedGame;
     private ulong nextRefresh;
 
-    private static bool InRussian => TranslationServer.GetLocale().StartsWith("ru", StringComparison.OrdinalIgnoreCase);
-
     public void Toggle()
     {
         window ??= CreateWindow();
@@ -98,10 +96,16 @@ internal sealed class ActiveActionsWindow(SceneTree tree)
         nextRefresh = Time.GetTicksMsec() + 250;
         displayedGame = GameAccess.CurrentGame;
         IReadOnlyList<ActionComponent> actions = displayedGame?.ActionManager.ActiveActions ?? [];
-        bool russian = InRussian;
-        status!.Text = actions.Count > 0
-            ? (russian ? $"Активных действий: {actions.Count}" : $"Active actions: {actions.Count}")
-            : (russian ? "Нет активных действий" : "No active actions");
+        bool russian = ActionSlots.InRussian;
+        if (displayedGame != null)
+        {
+            int limit = ActionSlots.LimitFor(displayedGame.ActionManager);
+            status!.Text = russian ? $"Активных действий: {actions.Count} / {limit}" : $"Active actions: {actions.Count} / {limit}";
+        }
+        else
+        {
+            status!.Text = russian ? "Нет активного персонажа" : "No character loaded";
+        }
         stopAll!.Text = russian ? "Остановить все" : "Stop all";
         stopAll.Disabled = actions.Count == 0;
 

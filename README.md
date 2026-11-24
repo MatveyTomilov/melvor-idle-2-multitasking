@@ -1,17 +1,21 @@
 # Multitasking for Melvor Idle 2
 
-Keep training several skills while you fight. Start actions through the usual game controls and your other activities keep running. Each skill can run one action at a time, with no shared slot limit.
+Keep training several skills while you fight. Start with one action slot and buy permanent extra slots for each character under **Shop → Multitasking**. Each skill can run one action at a time. At capacity, starting another skill replaces the oldest active action.
 
-Press **F5** or choose **Multitasking** from the **Mods** menu to see what's running. You can stop an individual action or stop them all. Active actions are saved with your character and continue during offline progress. Normal requirements, resource costs and stopping conditions apply.
+Slot upgrades cost **30,000 → 60,000 → 360,000 → 960,000 → 1,800,000 → 3,000,000 GP**. Each later slot costs 3,000,000 GP, up to the number of distinct active actions the game supports. At 6,000 GP per hour per active slot, reinvesting all earnings unlocks the second action in about 5 hours, the fourth in 30 hours, and the sixth in 130 hours.
+
+Press **F5** or choose **Multitasking** from the **Mods** menu to see what's running and how many slots you have. You can stop individual actions or all of them. Active actions are saved with your character and continue during offline progress. Normal requirements, resource costs and stopping conditions apply.
 
 ## Install
 
 1. Close Melvor Idle 2. In Steam, right-click the game and choose **Manage → Browse local files**.
 2. Install [Melvor Mod Loader](https://www.nexusmods.com/melvoridle2/mods/2) 0.2.0 or newer in the game folder.
-3. Download **Multitasking-1.0.0.zip** from [GitHub Releases](https://github.com/MatveyTomilov/melvor-idle-2-multitasking/releases/latest). Extract it into the game folder next to `Melvor2.exe`. The mod DLL should end up at `mods/Multitasking/Multitasking.dll`.
+3. Download the mod ZIP from [GitHub Releases](https://github.com/MatveyTomilov/melvor-idle-2-multitasking/releases/latest). Extract it into the game folder next to `Melvor2.exe`. The mod DLL should end up at `mods/Multitasking/Multitasking.dll`.
 4. Launch the game from Steam and press **F5**.
 
 To uninstall, close the game and remove the `mods/Multitasking` folder.
+
+When opening a save from version 1.0, the game keeps the newest actions within the purchased limit. Slot purchases are part of the character save. Saving with the mod removed drops its purchase records without refunding the gold.
 
 ## Compatibility
 
