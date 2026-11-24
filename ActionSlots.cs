@@ -17,7 +17,7 @@ namespace Multitasking;
 internal static class ActionSlots
 {
     private const string NamespaceId = "Multitasking";
-    private static readonly int[] SlotPrices = [30_000, 60_000, 360_000, 960_000, 1_800_000, 3_000_000];
+    private static readonly int[] SlotPrices = [100, 30_000, 60_000, 360_000, 960_000, 1_800_000, 3_000_000];
     private static readonly ConditionalWeakTable<ActiveActionManager, SlotPurchases> PurchasesByManager = new();
 
     private sealed record SlotPurchases(ShopComponent Shop, IReadOnlyList<ShopPurchase> Purchases);

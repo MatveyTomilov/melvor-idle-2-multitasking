@@ -2,7 +2,7 @@
 
 Keep training several skills while you fight. Start with one action slot and buy permanent extra slots for each character under **Shop → Multitasking**. Each skill can run one action at a time. At capacity, starting another skill replaces the oldest active action.
 
-Slot upgrades cost **30,000 → 60,000 → 360,000 → 960,000 → 1,800,000 → 3,000,000 GP**. Each later slot costs 3,000,000 GP, up to the number of distinct active actions the game supports. At 6,000 GP per hour per active slot, reinvesting all earnings unlocks the second action in about 5 hours, the fourth in 30 hours, and the sixth in 130 hours.
+Slot upgrades cost **100 → 30,000 → 60,000 → 360,000 → 960,000 → 1,800,000 → 3,000,000 GP**. Each later slot costs 3,000,000 GP, up to the number of distinct active actions the game supports. At 6,000 GP per hour per active slot, reinvesting all earnings unlocks the second action in about 1 minute, the fourth in about 6 hours, and the sixth in about 53 hours.
 
 Press **F5** or choose **Multitasking** from the **Mods** menu to see what's running and how many slots you have. You can stop individual actions or all of them. Active actions are saved with your character and continue during offline progress. Normal requirements, resource costs and stopping conditions apply.
 
