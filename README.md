@@ -6,6 +6,8 @@ Slot upgrades cost **100 → 30,000 → 60,000 → 360,000 → 960,000 → 1,800
 
 Press **F5** or choose **Multitasking** from the **Mods** menu to see what's running and how many slots you have. You can stop individual actions or all of them. Active actions are saved with your character and continue during offline progress. Normal requirements, resource costs and stopping conditions apply.
 
+When multiple actions are running, use the dropdown in the bottom tracker to choose which action's stats to display. **Auto (latest)** follows the most recently started action. The tracker returns to Auto when the selected action stops.
+
 ## Install
 
 1. Close Melvor Idle 2. In Steam, right-click the game and choose **Manage → Browse local files**.

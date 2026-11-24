@@ -26,6 +26,7 @@ public sealed class MultitaskingMod : IMod
         harmony.Patch(
             AccessTools.Method(typeof(ShopComponent), nameof(ShopComponent.ProcessPurchase)),
             prefix: new HarmonyMethod(typeof(ActionSlots), nameof(ActionSlots.SkipEmptyPurchase)));
+        FooterActionSelector.Patch(harmony);
 
         var panel = new ActiveActionsWindow(context.Tree);
         context.AddWindow("Multitasking", panel.Toggle, Key.F5);
